@@ -11,31 +11,131 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<form
-			action=""
-			class="container">
-			<input
-				type="password"
-				placeholder="Masukan Password" />
-			<button type="button">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round">
-					<path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
-					<circle
-						cx="12"
-						cy="12"
-						r="3" />
-				</svg>
-			</button>
-		</form>
+		<nav class="navbar">
+			<div class="navbar-top">
+				<h1>Logo</h1>
+				<button
+					class="btn-toggle"
+					type="button">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-text-align-justify-icon lucide-text-align-justify">
+						<path d="M3 5h18" />
+						<path d="M3 12h18" />
+						<path d="M3 19h18" />
+					</svg>
+				</button>
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+		</nav>
+
+		<div class="content">
+			<div class="bg-image">
+				<img
+					src="img/bg-image.jpg"
+					alt="bg-image" />
+			</div>
+
+			<form
+				action=""
+				class="form">
+				<h2>Register</h2>
+				<span>Silahkan masukan data diri anda</span>
+				<div class="field">
+					<label for="fullname">Full Name</label>
+					<div class="container">
+						<input
+							type="text"
+							placeholder="Masukan Nama Lengkap" />
+					</div>
+				</div>
+				<div class="field">
+					<label for="fullname">Email</label>
+					<div class="container">
+						<input
+							type="text"
+							placeholder="Masukan Email" />
+					</div>
+				</div>
+				<div class="field">
+					<label for="password">Password</label>
+					<div class="container">
+						<input
+							type="password"
+							placeholder="Masukan Password" />
+						<button
+							class="btn-eye"
+							type="button">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round">
+								<path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+								<circle
+									cx="12"
+									cy="12"
+									r="3" />
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div class="field">
+					<label for="password">Confirm Password</label>
+					<div class="container">
+						<input
+							type="password"
+							placeholder="Masukan Password" />
+						<button
+							class="btn-eye"
+							type="button">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round">
+								<path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+								<circle
+									cx="12"
+									cy="12"
+									r="3" />
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<button
+					class="btn-register"
+					type="submit">
+					Register
+				</button>
+			</form>
+		</div>
+
 		<script src="app.js"></script>
 	</body>
 </html>
